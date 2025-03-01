@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Melody Master Co - Custom Song Service</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, rgba(44, 62, 80, 0.9), rgba(253, 116, 108, 0.9));
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: rgba(25, 42, 60, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            gap: 20px;
+        }
+
+        .hero-image {
+            width: 40%;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .hero-text {
+            width: 50%;
+            text-align: left;
+        }
+
+        .hero-text h2 {
+            font-size: 2em;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero {
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
+            }
+            .hero-image {
+                width: 45%;
+            }
+            .hero-text {
+                width: 50%;
+            }
+            .hero-text h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Melody Master Co</h1>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-image">
+            <img src="istockphoto-539207375-1024x1024.jpg" alt="Hero Image">
+        </div>
+        <div class="hero-text">
+            <h2>Tell Us Your Story & Let’s Turn It into Music!</h2>
+            <p>Your story deserves a unique soundtrack. Let Melody Master Co create a custom song just for you.</p>
+        </div>
+    </section>
+</body>
+</html>
