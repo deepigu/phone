@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,122 +26,117 @@
             </ul>
         </nav>
     </header>
-    <section id="hero">
-        <div class="hero-image">
-            <img src="/istockphoto-539207375-1024x1024.jpg" alt="Phone playing music">
-        </div>
-        <div class="hero-text">
-            <h2>Tell Us Your Story & Let's Turn It into Music!</h2>
-            <p>Your story deserves a unique soundtrack. Let Melody Master Co create a custom song just for you.</p>
-            <button class="cta" onclick="scrollToSection('request-song')">Start Now</button>
-        </div>
-    </section>
-    <section id="how-it-works">
-        <h2>How It Works</h2>
-        <div class="steps">
-            <div class="step">
-                <h3>Step 1</h3>
-                <p>Fill out a simple form sharing your preferences, story, and any special requests.</p>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content container">
+                <div class="hero-image">
+                    <img src="/istockphoto-539207375-1024x1024.jpg" alt="Phone playing music">
+                </div>
+                <div class="hero-text">
+                    <h2>Tell Us Your Story & Let's Turn It into Music!</h2>
+                    <p>Your story deserves a unique soundtrack. Let Melody Master Co create a custom song just for you.</p>
+                    <button class="cta" onclick="scrollToSection('request-song')">Start Now</button>
+                </div>
             </div>
-            <div class="step">
-                <h3>Step 2</h3>
-                <p>Our talented musicians craft a custom song based on your unique story and preferences.</p>
+        </section>
+
+        <section id="pricing" class="container">
+            <h2>Our Pricing Packages</h2>
+            <p class="section-subtitle">Choose the plan that fits your needs:</p>
+            <div class="pricing-container">
+                <div class="pricing-box">
+                    <h3>Basic</h3>
+                    <p class="price">₹950</p>
+                    <p>Per Song</p>
+                    <p>Song Duration: 1-2 mins</p>
+                    <p>2-3 Para Lyrics</p>
+                    <p>3 Revisions only</p>
+                    <button onclick="scrollToSection('request-song')">Start Now</button>
+                </div>
+                <div class="pricing-box">
+                    <h3>Standard</h3>
+                    <p class="price">₹1500</p>
+                    <p>Per Song</p>
+                    <p>Song Duration: 2-3.5 mins</p>
+                    <p>3-5 Para Lyrics</p>
+                    <p>5 Revisions only</p>
+                    <button onclick="scrollToSection('request-song')">Start Now</button>
+                </div>
+                <div class="pricing-box">
+                    <h3>Premium</h3>
+                    <p class="price">₹2000</p>
+                    <p>Per Song</p>
+                    <p>Song Duration: 4-5 mins</p>
+                    <p>Max 8 Para Lyrics</p>
+                    <p>Unlimited Revisions</p>
+                    <button onclick="scrollToSection('request-song')">Start Now</button>
+                </div>
+                <div class="pricing-box">
+                    <h3>All in Premium</h3>
+                    <p class="price">₹2500</p>
+                    <p>Per Song</p>
+                    <p>Song Duration: 5-8 mins</p>
+                    <p>Max 10 Para Lyrics</p>
+                    <p>Unlimited Revisions</p>
+                    <button onclick="scrollToSection('request-song')">Start Now</button>
+                </div>
             </div>
-            <div class="step">
-                <h3>Step 3</h3>
-                <p>Receive your personalized song and enjoy a melody that speaks to you!</p>
+        </section>
+
+        <section id="request-song" class="container">
+            <h2>Request Your Custom Song</h2>
+            <form id="songRequestForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Your Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="story">Your Story:</label>
+                    <textarea id="story" name="story" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="package">Select Package:</label>
+                    <select id="package" name="package" required>
+                        <option value="">Select a package</option>
+                        <option value="Basic">Basic - ₹950</option>
+                        <option value="Standard">Standard - ₹1500</option>
+                        <option value="Premium">Premium - ₹2000</option>
+                        <option value="All in Premium">All in Premium - ₹2500</option>
+                    </select>
+                </div>
+                
+                <button type="submit">Submit Your Request</button>
+            </form>
+            <div id="thankYouMessage" style="display:none;">
+                <h3>Thank you for contacting Melody Master Co!</h3>
+                <p>We will contact you shortly.</p>
             </div>
-        </div>
-    </section>
-    <section id="pricing">
-        <h2>Our Pricing Packages</h2>
-        <p class="section-subtitle">Choose the plan that fits your needs:</p>
-        <div class="pricing-container">
-            <div class="pricing-box" onclick="toggleZoom(this)">
-                <h3>Basic</h3>
-                <p class="price">₹950</p>
-                <p>Per Song</p>
-                <p>Song Duration: 1-2 mins</p>
-                <p>2-3 Para Lyrics</p>
-                <p>3 Revisions only</p>
-                <button onclick="scrollToSection('request-song')">Start Now</button>
-            </div>
-            <div class="pricing-box" onclick="toggleZoom(this)">
-                <h3>Standard</h3>
-                <p class="price">₹1500</p>
-                <p>Per Song</p>
-                <p>Song Duration: 2-3.5 mins</p>
-                <p>3-5 Para Lyrics</p>
-                <p>5 Revisions only</p>
-                <button onclick="scrollToSection('request-song')">Start Now</button>
-            </div>
-            <div class="pricing-box" onclick="toggleZoom(this)">
-                <h3>Premium</h3>
-                <p class="price">₹2000</p>
-                <p>Per Song</p>
-                <p>Song Duration: 4-5 mins</p>
-                <p>Max 8 Para Lyrics</p>
-                <p>Unlimited Revisions</p>
-                <button onclick="scrollToSection('request-song')">Start Now</button>
-            </div>
-            <div class="pricing-box" onclick="toggleZoom(this)">
-                <h3>All in Premium</h3>
-                <p class="price">₹2500</p>
-                <p>Per Song</p>
-                <p>Song Duration: 5-8 mins</p>
-                <p>Max 10 Para Lyrics</p>
-                <p>Unlimited Revisions</p>
-                <button onclick="scrollToSection('request-song')">Start Now</button>
-            </div>
-        </div>
-    </section>
-    <section id="request-song">
-        <h2>Request Your Custom Song</h2>
-        <form id="songRequestForm">
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Your Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="story">Your Story:</label>
-                <textarea id="story" name="story" rows="4" required></textarea>
-            </div>
-            
-            <div class="form-group">
-                <label for="package">Select Package:</label>
-                <select id="package" name="package" required>
-                    <option value="">Select a package</option>
-                    <option value="Basic">Basic - ₹950</option>
-                    <option value="Standard">Standard - ₹1500</option>
-                    <option value="Premium">Premium - ₹2000</option>
-                    <option value="All in Premium">All in Premium - ₹2500</option>
-                </select>
-            </div>
-            
-            <button type="submit">Submit Your Request</button>
-        </form>
-        <div id="thankYouMessage" style="display:none;">
-            <h3>Thank you for contacting Melody Master Co!</h3>
-            <p>We will contact you shortly.</p>
-        </div>
-    </section>
+        </section>
+    </main>
+
     <footer id="contact">
-        <p>Contact Us: <a href="mailto:melodymastersco@gmail.com">melodymastersco@gmail.com</a></p>
-        <div class="social-media">
-            <a href="https://www.instagram.com/melodymastersco"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://www.facebook.com/melodymastersco"><i class="fab fa-facebook"></i> Facebook</a>
+        <div class="container">
+            <p>Contact Us: <a href="mailto:melodymastersco@gmail.com">melodymastersco@gmail.com</a></p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/melodymastersco"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/melodymastersco"><i class="fab fa-facebook"></i> Facebook</a>
+            </div>
         </div>
     </footer>
+
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
@@ -155,18 +149,28 @@ src/pages/styles.css
     --text-light: #ffffff;
     --text-dark: #333333;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
+
 body {
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, rgba(25, 42, 60, 0.9), rgba(200, 70, 70, 0.9));
     color: var(--text-light);
     line-height: 1.6;
     overflow-x: hidden;
 }
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Header Styles */
 header {
     background: var(--background-dark);
@@ -178,66 +182,83 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .logo {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+
 .logo img {
     height: 60px;
     border-radius: 50%;
 }
+
 .logo h1 {
     font-size: 1.5rem;
     font-weight: 700;
 }
+
 /* Navigation */
 .nav-links {
     display: flex;
     gap: 2rem;
     list-style: none;
 }
+
 .nav-links a {
     color: var(--text-light);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
 }
+
 .nav-links a:hover {
     color: var(--primary-color);
 }
+
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 /* Hero Section */
 #hero {
-    padding: 8rem 5% 5rem;
+    padding: 8rem 0 5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 100vh;
-    background-position: center;
-    background-size: cover;
+    gap: 2rem;
 }
+
 .hero-image {
-    width: 45%;
+    flex: 1;
+    max-width: 500px;
 }
+
 .hero-image img {
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
 .hero-text {
-    width: 50%;
+    flex: 1;
 }
+
 .hero-text h2 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
 }
+
 .cta {
     background: var(--primary-color);
     color: var(--text-light);
@@ -248,17 +269,20 @@ header {
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .cta:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 /* Pricing Section */
 .pricing-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    padding: 2rem 5%;
+    padding: 2rem 0;
 }
+
 .pricing-box {
     background: rgba(0, 0, 0, 0.6);
     padding: 2rem;
@@ -266,19 +290,19 @@ header {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .pricing-box:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
-.pricing-box.zoom {
-    transform: scale(1.05);
-}
+
 .price {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--primary-color);
     margin: 1rem 0;
 }
+
 /* Form Styles */
 form {
     max-width: 600px;
@@ -287,13 +311,16 @@ form {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
 }
+
 .form-group {
     margin-bottom: 1.5rem;
 }
+
 label {
     display: block;
     margin-bottom: 0.5rem;
 }
+
 input,
 textarea,
 select {
@@ -304,11 +331,45 @@ select {
     background: rgba(255, 255, 255, 0.1);
     color: var(--text-light);
 }
+
+button {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: var(--background-dark);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
+
     .nav-links {
         display: none;
         position: absolute;
@@ -319,29 +380,34 @@ select {
         flex-direction: column;
         padding: 1rem 0;
     }
+
     .nav-links.show {
         display: flex;
     }
-    #hero {
+
+    .hero-content {
         flex-direction: column;
         text-align: center;
-        padding-top: 6rem;
     }
-    .hero-image,
-    .hero-text {
-        width: 100%;
-    }
+
     .hero-text h2 {
         font-size: 2rem;
     }
+
+    .hero-image {
+        max-width: 100%;
+    }
 }
+
 @media (max-width: 480px) {
     .pricing-box {
         padding: 1.5rem;
     }
+
     .price {
         font-size: 2rem;
     }
+
     .hero-text h2 {
         font-size: 1.5rem;
     }
@@ -349,32 +415,35 @@ select {
 src/pages/script.js
 // Initialize EmailJS
 emailjs.init("8cpXeAmdLWlqO4JxL");
+
 // Toggle mobile menu
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
+
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
+
 // Close menu when clicking outside
 document.addEventListener('click', (e) => {
     if (!e.target.closest('nav')) {
         navLinks.classList.remove('show');
     }
 });
+
 // Smooth scroll function
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth' });
 }
-// Toggle zoom effect on pricing boxes
-function toggleZoom(element) {
-    element.classList.toggle('zoom');
-}
+
 // Form submission
 const form = document.getElementById('songRequestForm');
 const thankYouMessage = document.getElementById('thankYouMessage');
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+
     emailjs.sendForm('service_49cltyg', 'template_njgfwo9', form)
         .then(() => {
             form.style.display = 'none';
@@ -385,21 +454,14 @@ form.addEventListener('submit', (e) => {
             alert('Error sending your request. Please try again later.');
         });
 });
-// Create floating hearts animation
-function createHearts() {
-    const container = document.createElement('div');
-    container.className = 'hearts-container';
-    document.body.appendChild(container);
-    for (let i = 0; i < 20; i++) {
-        const heart = document.createElement('div');
-        heart.className = 'heart';
-        heart.innerHTML = '❤️';
-        heart.style.left = Math.random() * 100 + 'vw';
-        heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
-        heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
-        container.appendChild(heart);
-        heart.addEventListener('animationend', () => heart.remove());
-    }
-}
-// Start creating hearts periodically
-setInterval(createHearts, 3000);
+
+// Pricing box hover effect
+document.querySelectorAll('.pricing-box').forEach(box => {
+    box.addEventListener('mouseover', () => {
+        box.style.transform = 'translateY(-10px)';
+    });
+    
+    box.addEventListener('mouseout', () => {
+        box.style.transform = 'translateY(0)';
+    });
+});
